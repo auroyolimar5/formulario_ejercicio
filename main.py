@@ -4,7 +4,6 @@ from openpyxl import Workbook, load_workbook
 import re
 import os
 
-
 nombre_archivo = 'datos.xlsx'
 
 if os.path.exists(nombre_archivo):
@@ -88,6 +87,3 @@ boton_guardar = tk.Button(root, text="Guardar", command=guardar_datos, bg='#6D82
 boton_guardar.grid(row=5, column=0, columnspan=2, padx=10, pady=10)
 
 root.mainloop()
-
-if __name__ == '__main__':
-    root.run()
